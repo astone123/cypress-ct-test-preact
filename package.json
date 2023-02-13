@@ -1,0 +1,21 @@
+{
+  "name": "cypress-ct-test-preact",
+  "version": "0.0.1",
+  "description": "Test adapter for mounting Preact components with Cypress Component testing",
+  "main": "index.mjs",
+  "repository": "git@github.com:astone123/cypress-ct-test-preact.git",
+  "author": "astone123 <adams@cypress.io>",
+  "license": "MIT",
+  "exports": {
+    "node": "./definition.cjs",
+    "default": "./index.mjs"
+  },
+  "files": [
+    "package.json",
+    "definition.cjs",
+    "index.mjs"
+  ],
+  "dependencies": {
+    "@cypress/mount-utils": "^4.0.0"
+  }
+}
