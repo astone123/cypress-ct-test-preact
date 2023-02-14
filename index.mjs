@@ -10,7 +10,7 @@ export function mount(component, options = {}) {
   render(component, root);
 
   return cy.wait(0, { log: false }).then(() => {
-    if (options.log) {
+    if (options.log !== false) {
       Cypress.log({
         name: "mount",
         message: "Mounted component",
